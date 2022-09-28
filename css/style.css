@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    background-color: #222;
+    background-image: url("../favicon.svg");
+    background-size: cover;
+    background-position: focus;
+    background-attachment: fixed;
+    font-size: 2em;
+    font-family: serif;
+}
+main {
+    display: block;
+}
+h1 {
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #eb840e;
+    letter-spacing: 0.05em;
+}
+a {
+    background-color: transparent;
+    color: #eb840e;
+}
+a:hover {
+    text-decoration: none;
+}
+b, strong {
+    font-weight: bolder;
+}
+code, kbd, samp {
+    font-family: monospace;
+}
+small {
+    font-size: 80%;
+}
+img {
+    border-style: none;
+}
+.content {
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background: rgba(6, 113, 156, .9);
+    box-shadow: 8px -8px 15px #e17d0c;
+}
+.content p {
+    padding: 0.3em 3em 0 3em;
+    line-height: 1.2em;
+}
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+        font-size: 14px;
+    }
+    a[href^='http']:not([href*='doc.log.arcalot.io']):after {
+        content: ' (' attr(href) ')';
+    }
+    abbr[title]:after {
+        content: ' (' attr(title) ')';
+    }
+}

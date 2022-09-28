@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":[["collect_events","Collects all log events for a given build ID"]],"struct":[["Adjectives",""],["Event","Individual log events including their build ID, metadata, and content"],["Nouns",""],["Verbs",""]]};
